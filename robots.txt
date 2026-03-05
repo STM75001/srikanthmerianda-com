@@ -1,0 +1,32 @@
+# robots.txt for srikanthmerianda.com
+# AI & RPA Transformation Advisor | Dallas, TX
+# Contact: info@srikanthmerianda.com
+
+# Allow all major search engine crawlers
+User-agent: *
+Allow: /
+
+# Block crawlers from thank-you / confirmation pages (no SEO value)
+Disallow: /contact?sent=true
+Disallow: /thank-you
+
+# Block crawlers from any admin or private paths (add as needed)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+
+# Allow Google's specific crawlers explicitly
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location — REQUIRED for Google Search Console
+Sitemap: https://srikanthmerianda.com/sitemap.xml
+
+# Crawl delay (optional — remove if site loads fast)
+# Crawl-delay: 1

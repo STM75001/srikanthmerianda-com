@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Strategy Call | Srikanth Merianda — AI & RPA Transformation Advisor</title>
+<meta name="description" content="Book a 30-minute AI strategy call with Srikanth Merianda — independent AI & RPA transformation advisor based in Dallas, TX. No sales pitch. Just clarity on your next move.">
+<meta name="keywords" content="book AI consultant, contact AI transformation advisor Dallas, hire fractional AI advisor, AI strategy consultation">
+<link rel="canonical" href="https://srikanthmerianda.com/contact">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0D0D0D;
+    --slate: #1A1F2E;
+    --steel: #2C3347;
+    --gold: #C8A96E;
+    --gold-light: #E4C98A;
+    --bone: #F5F0E8;
+    --chalk: #FAFAF7;
+    --mist: #E8E4DC;
+    --muted: #6B7280;
+    --body: #2D3748;
+    --teal: #1E6B6B;
+    --ff-display: 'Cormorant Garamond', Georgia, serif;
+    --ff-body: 'DM Sans', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--ff-body); background: var(--chalk); color: var(--body); line-height: 1.7; overflow-x: hidden; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(13,13,13,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(200,169,110,0.2);
+    padding: 0 5vw;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+  }
+  .nav-brand { font-family: var(--ff-display); font-size: 1.25rem; font-weight: 600; color: #fff; text-decoration: none; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+  .nav-links a { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.72); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+
+  /* HERO */
+  .contact-hero {
+    background: var(--slate);
+    padding: 140px 5vw 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 70% at 80% 50%, rgba(200,169,110,0.08) 0%, transparent 70%);
+  }
+  .hero-inner {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+    max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;
+  }
+  .hero-eyebrow {
+    font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold); font-weight: 500; margin-bottom: 1.25rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .hero-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--gold); }
+  h1 { font-family: var(--ff-display); font-size: clamp(2.4rem, 4vw, 3.6rem); font-weight: 300; color: #fff; line-height: 1.15; margin-bottom: 1.5rem; }
+  h1 em { font-style: italic; color: var(--gold); }
+  .hero-desc { font-size: 1rem; color: rgba(255,255,255,0.58); line-height: 1.8; font-weight: 300; margin-bottom: 2.5rem; }
+  .commitment-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+  .commitment-list li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.88rem; color: rgba(255,255,255,0.6); }
+  .commitment-list li::before { content: '✓'; color: var(--gold); font-weight: 600; flex-shrink: 0; margin-top: 0.1rem; }
+  .hero-svg { display: flex; align-items: center; justify-content: center; }
+
+  /* FORM SECTION */
+  .contact-main {
+    padding: 80px 5vw;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 6rem;
+    max-width: 1200px; margin: 0 auto;
+    align-items: start;
+  }
+  .form-panel {
+    background: #fff;
+    border: 1px solid var(--mist);
+    border-radius: 6px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.04);
+  }
+  .form-panel h2 {
+    font-family: var(--ff-display); font-size: 1.75rem; font-weight: 600;
+    color: var(--ink); margin-bottom: 0.5rem; line-height: 1.2;
+  }
+  .form-panel .sub { font-size: 0.88rem; color: var(--muted); margin-bottom: 2rem; }
+  .field-group { display: flex; flex-direction: column; gap: 1.25rem; }
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .field { display: flex; flex-direction: column; gap: 0.4rem; }
+  .field label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+  .field input, .field select, .field textarea {
+    background: var(--chalk); border: 1px solid var(--mist);
+    border-radius: 3px; padding: 0.75rem 1rem;
+    color: var(--ink); font-family: var(--ff-body); font-size: 0.9rem;
+    outline: none; transition: border-color 0.2s; width: 100%;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--gold); background: #fff; }
+  .field textarea { resize: vertical; min-height: 120px; }
+  .field input::placeholder, .field textarea::placeholder { color: var(--muted); opacity: 0.6; }
+  .field select { appearance: none; cursor: pointer; }
+  .submit-btn {
+    background: var(--gold); color: var(--ink); border: none;
+    padding: 1rem 2rem; border-radius: 2px; font-weight: 500;
+    font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase;
+    cursor: pointer; transition: all 0.25s; width: 100%;
+    font-family: var(--ff-body); margin-top: 0.5rem;
+    display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+  }
+  .submit-btn:hover { background: var(--gold-light); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(200,169,110,0.3); }
+  .form-note { font-size: 0.72rem; color: var(--muted); text-align: center; margin-top: 0.75rem; }
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+  }
+  .form-success .check { font-size: 3rem; margin-bottom: 1rem; }
+  .form-success h3 { font-family: var(--ff-display); font-size: 1.5rem; color: var(--teal); margin-bottom: 0.75rem; }
+  .form-success p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
+
+  /* SIDEBAR */
+  .contact-sidebar { display: flex; flex-direction: column; gap: 2rem; }
+  .sidebar-card {
+    border: 1px solid var(--mist); border-radius: 4px; padding: 1.75rem;
+    background: #fff;
+  }
+  .sidebar-card.gold-border { border-top: 3px solid var(--gold); }
+  .sidebar-card.teal-border { border-top: 3px solid var(--teal); }
+  .sidebar-card h3 {
+    font-family: var(--ff-display); font-size: 1.15rem; font-weight: 600;
+    color: var(--ink); margin-bottom: 0.5rem;
+  }
+  .sidebar-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
+  .sidebar-card .eyebrow {
+    font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--gold); font-weight: 500; margin-bottom: 0.5rem;
+  }
+  .contact-detail {
+    display: flex; align-items: center; gap: 0.75rem;
+    padding: 0.75rem 0; border-top: 1px solid var(--mist);
+  }
+  .contact-detail:first-of-type { border-top: none; }
+  .contact-icon {
+    width: 36px; height: 36px; background: var(--bone); border-radius: 3px;
+    display: flex; align-items: center; justify-content: center; font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .contact-detail-text .label { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+  .contact-detail-text .value { font-size: 0.88rem; color: var(--ink); font-weight: 500; }
+  .contact-detail-text .value a { color: var(--ink); text-decoration: none; }
+  .contact-detail-text .value a:hover { color: var(--teal); }
+  .engagement-list { list-style: none; display: flex; flex-direction: column; gap: 0; }
+  .engagement-item {
+    padding: 0.85rem 0; border-top: 1px solid var(--mist);
+    display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.85rem; color: var(--body);
+  }
+  .engagement-item:first-child { border-top: none; }
+  .engagement-item::before { content: '→'; color: var(--gold); font-size: 0.8rem; flex-shrink: 0; margin-top: 0.15rem; }
+
+  /* WHAT TO EXPECT */
+  .expect-section {
+    background: var(--bone);
+    padding: 80px 5vw;
+  }
+  .expect-inner { max-width: 1200px; margin: 0 auto; }
+  .expect-eyebrow { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem; }
+  .expect-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--gold); display: block; }
+  h2.expect-title { font-family: var(--ff-display); font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 300; color: var(--ink); margin-bottom: 3rem; }
+  h2.expect-title em { font-style: italic; color: var(--teal); }
+  .expect-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .expect-card {
+    background: #fff; border: 1px solid var(--mist); border-radius: 4px; padding: 1.75rem;
+    position: relative; transition: box-shadow 0.3s;
+  }
+  .expect-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+  .expect-num { font-family: var(--ff-display); font-size: 3rem; font-weight: 300; color: rgba(200,169,110,0.25); line-height: 1; margin-bottom: 0.75rem; }
+  .expect-card h4 { font-family: var(--ff-display); font-size: 1.1rem; font-weight: 600; color: var(--ink); margin-bottom: 0.5rem; }
+  .expect-card p { font-size: 0.82rem; color: var(--muted); line-height: 1.7; }
+
+  /* FAQ */
+  .faq-section { padding: 80px 5vw; }
+  .faq-inner { max-width: 800px; margin: 0 auto; }
+  .faq-title { font-family: var(--ff-display); font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 300; color: var(--ink); margin-bottom: 2.5rem; text-align: center; }
+  .faq-item { border-top: 1px solid var(--mist); padding: 1.5rem 0; }
+  .faq-item:last-child { border-bottom: 1px solid var(--mist); }
+  .faq-q {
+    font-weight: 500; font-size: 0.95rem; color: var(--ink); cursor: pointer;
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  }
+  .faq-q::after { content: '+'; color: var(--gold); font-size: 1.25rem; font-weight: 300; flex-shrink: 0; }
+  .faq-q.open::after { content: '−'; }
+  .faq-a { font-size: 0.88rem; color: var(--muted); line-height: 1.75; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, margin 0.3s ease; }
+  .faq-a.open { max-height: 300px; margin-top: 0.75rem; }
+
+  /* FOOTER */
+  footer { background: #080808; color: rgba(255,255,255,0.4); padding: 3rem 5vw; }
+  .footer-bottom { display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem; flex-wrap: wrap; gap: 1rem; }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.3); text-decoration: none; font-size: 0.72rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-brand-text { font-family: var(--ff-display); font-size: 1.1rem; font-weight: 600; color: rgba(255,255,255,0.6); }
+  .footer-brand-text span { color: var(--gold); }
+
+  @media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-svg { display: none; }
+    .contact-main { grid-template-columns: 1fr; }
+    .field-row { grid-template-columns: 1fr; }
+    .expect-grid { grid-template-columns: 1fr 1fr; }
+    .nav-links { display: none; }
+  }
+  @media (max-width: 600px) {
+    .expect-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Srikanth <span>Merianda</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#shronos">Shronos</a></li>
+    <li><a href="index.html#books">Books</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="contact-hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Let's Talk Strategy</div>
+      <h1>One Conversation.<br><em>Real Clarity.</em></h1>
+      <p class="hero-desc">
+        Most AI transformation conversations go in circles because no one in the room has done it before. I have — 18 times over, across Telecom, Healthcare, and Finance. Book 30 minutes and leave with a clear picture of where you stand and what your next move should be.
+      </p>
+      <ul class="commitment-list">
+        <li>No junior analysts — you speak directly with Srikanth</li>
+        <li>No sales pitch — this is a working strategy conversation</li>
+        <li>No obligation — if we're not a fit, I'll tell you</li>
+        <li>Specific to your business — not a generic AI overview</li>
+        <li>Applicable immediately — you'll leave with 2–3 actions</li>
+      </ul>
+    </div>
+    <!-- SVG Illustration: Strategy/Consultation concept -->
+    <div class="hero-svg">
+      <svg width="380" height="340" viewBox="0 0 380 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background glow -->
+        <ellipse cx="190" cy="170" rx="160" ry="140" fill="rgba(200,169,110,0.06)"/>
+        <!-- Main dialog/strategy frame -->
+        <rect x="60" y="50" width="260" height="180" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(200,169,110,0.3)" stroke-width="1.5"/>
+        <!-- Inner content lines -->
+        <rect x="88" y="82" width="120" height="8" rx="4" fill="rgba(200,169,110,0.5)"/>
+        <rect x="88" y="102" width="180" height="5" rx="2.5" fill="rgba(255,255,255,0.15)"/>
+        <rect x="88" y="116" width="150" height="5" rx="2.5" fill="rgba(255,255,255,0.1)"/>
+        <rect x="88" y="130" width="165" height="5" rx="2.5" fill="rgba(255,255,255,0.1)"/>
+        <!-- Divider -->
+        <line x1="88" y1="150" x2="292" y2="150" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <!-- Metric bars -->
+        <rect x="88" y="163" width="180" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+        <rect x="88" y="163" width="140" height="6" rx="3" fill="rgba(30,107,107,0.6)"/>
+        <rect x="88" y="178" width="180" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+        <rect x="88" y="178" width="110" height="6" rx="3" fill="rgba(200,169,110,0.5)"/>
+        <rect x="88" y="193" width="180" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+        <rect x="88" y="193" width="155" height="6" rx="3" fill="rgba(30,107,107,0.4)"/>
+        <!-- Score badge -->
+        <circle cx="288" cy="90" r="28" fill="rgba(30,107,107,0.2)" stroke="rgba(30,107,107,0.5)" stroke-width="1.5"/>
+        <text x="288" y="86" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="rgba(30,200,200,0.8)" font-weight="300">74</text>
+        <text x="288" y="101" text-anchor="middle" font-family="sans-serif" font-size="7" fill="rgba(255,255,255,0.4)" letter-spacing="0.5">SCORE</text>
+        <!-- Calendar/booking element below -->
+        <rect x="100" y="255" width="180" height="55" rx="8" fill="rgba(200,169,110,0.08)" stroke="rgba(200,169,110,0.25)" stroke-width="1"/>
+        <rect x="114" y="266" width="60" height="5" rx="2.5" fill="rgba(200,169,110,0.5)"/>
+        <rect x="114" y="278" width="100" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+        <rect x="114" y="289" width="80" height="4" rx="2" fill="rgba(255,255,255,0.1)"/>
+        <!-- Arrow connector -->
+        <path d="M190 235 L190 252" stroke="rgba(200,169,110,0.4)" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <polygon points="190,255 186,249 194,249" fill="rgba(200,169,110,0.5)"/>
+        <!-- Decorative dots -->
+        <circle cx="330" cy="55" r="4" fill="rgba(200,169,110,0.3)"/>
+        <circle cx="345" cy="70" r="2.5" fill="rgba(200,169,110,0.2)"/>
+        <circle cx="50" cy="230" r="3.5" fill="rgba(30,107,107,0.4)"/>
+        <circle cx="38" cy="218" r="2" fill="rgba(30,107,107,0.25)"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTACT AREA -->
+<div style="background:var(--chalk); padding: 60px 0;">
+  <div class="contact-main">
+
+    <!-- FORM -->
+    <div>
+      <div class="form-panel">
+        <h2>Book Your Strategy Call</h2>
+        <p class="sub">Fill in the form and Srikanth will reach out within 1 business day to confirm your 30-minute call.</p>
+        <form id="contactForm" action="https://formsubmit.co/info@srikanthmerianda.com" method="POST">
+          <!-- FormSubmit hidden config -->
+          <input type="hidden" name="_subject" value="New Consulting Inquiry — srikanthmerianda.com">
+          <input type="hidden" name="_next" value="https://srikanthmerianda.com/contact?sent=true">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <div class="field-group">
+            <div class="field-row">
+              <div class="field">
+                <label>First Name *</label>
+                <input type="text" name="first_name" placeholder="First name" required>
+              </div>
+              <div class="field">
+                <label>Last Name *</label>
+                <input type="text" name="last_name" placeholder="Last name" required>
+              </div>
+            </div>
+            <div class="field">
+              <label>Business Email *</label>
+              <input type="email" name="email" placeholder="you@company.com" required>
+            </div>
+            <div class="field">
+              <label>Phone (Optional)</label>
+              <input type="tel" name="phone" placeholder="+1 (214) 000-0000">
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>Title / Role *</label>
+                <input type="text" name="title" placeholder="COO, CTO, VP Operations..." required>
+              </div>
+              <div class="field">
+                <label>Company *</label>
+                <input type="text" name="company" placeholder="Company name" required>
+              </div>
+            </div>
+            <div class="field">
+              <label>Company Size *</label>
+              <select name="company_size" required>
+                <option value="">Select company size</option>
+                <option>1–50 employees (Small Business)</option>
+                <option>51–250 employees (Growth Stage)</option>
+                <option>251–1,000 employees (Mid-Market)</option>
+                <option>1,000–5,000 employees (Upper Mid-Market)</option>
+                <option>5,000+ employees (Enterprise)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Industry</label>
+              <select name="industry">
+                <option value="">Select your industry</option>
+                <option>Healthcare / Health Systems</option>
+                <option>Financial Services / Banking</option>
+                <option>Telecommunications</option>
+                <option>Manufacturing / Operations</option>
+                <option>Insurance</option>
+                <option>Retail / E-Commerce</option>
+                <option>Technology / SaaS</option>
+                <option>Professional Services</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Primary Challenge / What You'd Like to Discuss *</label>
+              <select name="primary_challenge" required>
+                <option value="">What's your biggest challenge right now?</option>
+                <option>AI strategy & roadmap — we don't know where to start</option>
+                <option>RPA modernization — our automation portfolio needs help</option>
+                <option>AI readiness — want to know where we stand before investing</option>
+                <option>Executive alignment — getting leadership on the same page</option>
+                <option>Vendor selection — evaluating AI/RPA platforms</option>
+                <option>Fractional AI Advisory — need ongoing strategic support</option>
+                <option>Executive AI Workshop — align my leadership team</option>
+                <option>LLM / GenAI implementation — exploring use cases</option>
+                <option>Other — I'll explain in the message</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Tell Me More (Optional)</label>
+              <textarea name="message" placeholder="Brief context about your situation, timeline, or specific questions — the more specific you are, the more useful our call will be."></textarea>
+            </div>
+            <div class="field">
+              <label>Preferred Call Format</label>
+              <select name="call_format">
+                <option>Video call (Google Meet / Zoom)</option>
+                <option>Phone call</option>
+                <option>Either works for me</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span>Request My Strategy Call</span>
+            <span>→</span>
+          </button>
+          <p class="form-note">You'll receive a confirmation at your email address. Response within 1 business day.</p>
+        </form>
+        <div class="form-success" id="successMsg">
+          <div class="check">✅</div>
+          <h3>Message Received</h3>
+          <p>Thank you — your inquiry has been sent to <strong>info@srikanthmerianda.com</strong>. Srikanth will reach out within 1 business day to schedule your 30-minute strategy call.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="contact-sidebar">
+
+      <div class="sidebar-card gold-border">
+        <div class="eyebrow">Direct Contact</div>
+        <h3>Reach Out Directly</h3>
+        <div class="contact-detail">
+          <div class="contact-icon">✉</div>
+          <div class="contact-detail-text">
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:info@srikanthmerianda.com">info@srikanthmerianda.com</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div class="contact-detail-text">
+            <div class="label">Location</div>
+            <div class="value">Dallas, Texas — Available Globally</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">🕐</div>
+          <div class="contact-detail-text">
+            <div class="label">Response Time</div>
+            <div class="value">Within 1 Business Day</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">🌐</div>
+          <div class="contact-detail-text">
+            <div class="label">Companies</div>
+            <div class="value">
+              <a href="https://www.shirotechnologies.com" target="_blank">Shiro Technologies</a> &nbsp;·&nbsp;
+              <a href="https://www.startekk.net" target="_blank">Startekk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-card teal-border">
+        <div class="eyebrow">Engagement Types</div>
+        <h3>What You Can Engage For</h3>
+        <ul class="engagement-list">
+          <li class="engagement-item">AI Readiness Assessment — 2–4 week structured diagnostic</li>
+          <li class="engagement-item">RPA Modernization Assessment — audit of your automation portfolio</li>
+          <li class="engagement-item">Fractional AI Advisor — monthly ongoing strategic counsel</li>
+          <li class="engagement-item">Executive AI Strategy Workshop — half-day or full-day session</li>
+          <li class="engagement-item">Shronos.ai Assessment — self-serve platform access at shronos.ai</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="eyebrow">Books on Amazon</div>
+        <h3>Read Before You Call</h3>
+        <p style="margin-bottom:1rem;">Get the framework before the conversation. Srikanth has published 4 books on AI and RPA strategy — available on Amazon.</p>
+        <a href="https://www.amazon.com/Robotic-Process-Automation-Tools-Benefits/dp/B07F1GZL9D" target="_blank" style="font-size:0.78rem;color:var(--teal);text-decoration:none;display:block;padding:0.3rem 0;border-top:1px solid var(--mist);">→ RPA: Tools, Benefits & Getting Started</a>
+        <a href="https://www.amazon.com/introduction-business-Businesses-Data-Driven-Decision-Making-ebook/dp/B0DPBDPQNF/" target="_blank" style="font-size:0.78rem;color:var(--teal);text-decoration:none;display:block;padding:0.3rem 0;border-top:1px solid var(--mist);">→ AI for Businesses: Data-Driven Decision Making</a>
+        <a href="https://www.amazon.com/Real-World-RPA-Cases-Businesses-ebook/dp/B07MH94K5B/" target="_blank" style="font-size:0.78rem;color:var(--teal);text-decoration:none;display:block;padding:0.3rem 0;border-top:1px solid var(--mist);">→ Real-World RPA Cases for Businesses</a>
+        <a href="https://www.amazon.com/STEPS-AUTOMATE-MANUAL-PROCESS-ROBOTIC-ebook/dp/B08F76ZL32/" target="_blank" style="font-size:0.78rem;color:var(--teal);text-decoration:none;display:block;padding:0.3rem 0;border-top:1px solid var(--mist);">→ Steps to Automate Any Manual Process with RPA</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- WHAT TO EXPECT -->
+<section class="expect-section">
+  <div class="expect-inner">
+    <div class="expect-eyebrow">The Call</div>
+    <h2 class="expect-title">What Happens on Your<br><em>Strategy Call</em></h2>
+    <div class="expect-grid">
+      <div class="expect-card">
+        <div class="expect-num">01</div>
+        <h4>You Talk, I Listen</h4>
+        <p>The first 10 minutes belong to you. I want to understand your business, your current state, and the specific pressure you're under — before I say a word about solutions.</p>
+      </div>
+      <div class="expect-card">
+        <div class="expect-num">02</div>
+        <h4>Honest Diagnosis</h4>
+        <p>Based on what I hear, I'll share my honest read of where you are — gaps, risks, and the highest-leverage opportunities given your situation and industry context.</p>
+      </div>
+      <div class="expect-card">
+        <div class="expect-num">03</div>
+        <h4>Two or Three Clear Actions</h4>
+        <p>You'll leave the call with specific, actionable next steps — not a proposal for a six-month engagement you didn't ask for. If a deeper engagement makes sense, we'll discuss it directly.</p>
+      </div>
+      <div class="expect-card">
+        <div class="expect-num">04</div>
+        <h4>Fit or No Fit</h4>
+        <p>If my services aren't the right fit for where you are, I'll tell you — and point you toward what is. I'd rather build a long-term relationship than force a short-term engagement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="faq-inner">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How quickly will I hear back after submitting this form?</div>
+      <div class="faq-a">Within 1 business day. All inquiries go directly to info@srikanthmerianda.com and are reviewed personally — not by a receptionist or assistant.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">We're a small business. Is this just for large enterprises?</div>
+      <div class="faq-a">Not at all. A significant part of my work is with small and mid-market businesses — companies with 50 to 2,000 employees that need strategic AI and RPA guidance but can't justify a Big 4 engagement. I've designed my services specifically for this segment.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">We already have an RPA program. Can you still help?</div>
+      <div class="faq-a">Yes — often this is where I add the most value. If you have an existing RPA program, I can assess the health of your automation portfolio, identify technical debt and underperforming bots, and build a modernization roadmap that prepares you for AI-augmented workflows.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Are you vendor-neutral, or do you have platform affiliations?</div>
+      <div class="faq-a">I am completely vendor-neutral. I have hands-on experience with UiPath, Automation Anywhere, and Blue Prism, which means I can evaluate any of them objectively based on what fits your environment — not based on referral fees or certifications.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What does a Fractional AI Advisor engagement look like?</div>
+      <div class="faq-a">It varies based on your needs, but typically includes monthly strategy sessions with your executive team, advisory support on AI vendor decisions and contract negotiations, attendance at key steering committee meetings, and quarterly briefings on the AI landscape relevant to your industry. Think of it as a senior AI strategist on retainer — without the full-time cost.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">We're not ready to buy anything — can we still reach out?</div>
+      <div class="faq-a">Absolutely. The strategy call is not a sales call. If you're in early-stage evaluation, just trying to understand what AI should mean for your business, or want a second opinion on something you've been told by a vendor — that's exactly what this call is for.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Do you work with clients outside of Dallas / Texas?</div>
+      <div class="faq-a">Yes. While I'm based in Dallas, TX, I work with clients nationally and can conduct all assessments and advisory engagements remotely. On-site workshops and executive sessions can be arranged for the right engagement.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom">
+    <span class="footer-brand-text">Srikanth <span>Merianda</span></span>
+    <span>© 2025 Srikanth Merianda · Dallas, TX · <a href="mailto:info@srikanthmerianda.com" style="color:var(--gold);text-decoration:none;">info@srikanthmerianda.com</a></span>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="https://shronos.ai" target="_blank">Shronos.ai</a>
+      <a href="index.html#books">Books</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el) {
+    el.classList.toggle('open');
+    el.nextElementSibling.classList.toggle('open');
+  }
+
+  // Check for success redirect
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('sent') === 'true') {
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('successMsg').style.display = 'block';
+  }
+</script>
+</body>
+</html>
