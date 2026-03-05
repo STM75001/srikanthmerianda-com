@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Dark background version (for dark navbars, dark backgrounds) -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E4C98A"/>
+      <stop offset="100%" stop-color="#C8A96E"/>
+    </linearGradient>
+    <linearGradient id="bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1F2E"/>
+      <stop offset="100%" stop-color="#0D1118"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ── DARK VERSION (primary) ── -->
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="96" fill="url(#bg-dark)"/>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="url(#gold-grad)" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Inner thin ring -->
+  <circle cx="100" cy="100" r="86" fill="none" stroke="rgba(200,169,110,0.15)" stroke-width="0.75"/>
+
+  <!-- S letterform — elegant serif -->
+  <!-- Top arc of S -->
+  <path d="M 72 68
+             Q 72 56  82 52
+             Q 92 48 102 50
+             Q 118 52 122 62
+             Q 126 72 118 80
+             Q 112 86 100 88
+             Q 86 90  78 96
+             Q 68 104 70 116
+             Q 72 128 84 134
+             Q 96 140 112 138
+             Q 124 136 130 128"
+        stroke="url(#gold-grad)"
+        stroke-width="7"
+        fill="none"
+        stroke-linecap="round"/>
+  <!-- Serif caps on S -->
+  <line x1="64" y1="68" x2="80" y2="68" stroke="url(#gold-grad)" stroke-width="5" stroke-linecap="round"/>
+  <line x1="122" y1="128" x2="138" y2="128" stroke="url(#gold-grad)" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Thin gold divider line -->
+  <line x1="100" y1="56" x2="100" y2="144" stroke="rgba(200,169,110,0.18)" stroke-width="0.75"/>
+
+  <!-- M letterform — clean geometric -->
+  <polyline points="108,136  108,64  124,100  140,64  140,136"
+            stroke="url(#gold-grad)"
+            stroke-width="7"
+            fill="none"
+            stroke-linejoin="miter"
+            stroke-linecap="round"/>
+
+  <!-- Decorative dot accent bottom center -->
+  <circle cx="100" cy="160" r="3" fill="rgba(200,169,110,0.5)"/>
+  <circle cx="88" cy="160" r="2" fill="rgba(200,169,110,0.25)"/>
+  <circle cx="112" cy="160" r="2" fill="rgba(200,169,110,0.25)"/>
+</svg>
