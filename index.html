@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srikanth Merianda | AI & RPA Transformation Advisor</title>
+<meta name="description" content="Independent AI transformation advisor helping businesses modernize operations with AI strategy, RPA modernization, and executive advisory services.">
+<meta name="keywords" content="AI transformation consultant, RPA modernization, AI readiness assessment, fractional AI advisor, enterprise AI strategy, AI consulting, digital transformation advisor">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0D0D0D;
+    --slate: #1A1F2E;
+    --steel: #2C3347;
+    --gold: #C8A96E;
+    --gold-light: #E4C98A;
+    --bone: #F5F0E8;
+    --chalk: #FAFAF7;
+    --mist: #E8E4DC;
+    --text-muted: #6B7280;
+    --text-body: #2D3748;
+    --accent-teal: #1E6B6B;
+    --ff-display: 'Cormorant Garamond', Georgia, serif;
+    --ff-body: 'DM Sans', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--ff-body);
+    background: var(--chalk);
+    color: var(--text-body);
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─────────────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(13,13,13,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(200,169,110,0.2);
+    padding: 0 5vw;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+  }
+  .nav-brand {
+    font-family: var(--ff-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+  .nav-brand span { color: var(--gold); }
+  .nav-links {
+    display: flex; gap: 2.5rem; list-style: none;
+    align-items: center;
+  }
+  .nav-links a {
+    font-family: var(--ff-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.72);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    background: var(--gold) !important;
+    color: var(--ink) !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2px;
+    font-weight: 500 !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--gold-light) !important; }
+
+  /* ─── HERO ────────────────────────────────────────── */
+  #hero {
+    min-height: 100vh;
+    background: var(--slate);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 100px 5vw 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  #hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 50%, rgba(200,169,110,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(30,107,107,0.12) 0%, transparent 60%);
+  }
+  #hero::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 0%, rgba(200,169,110,0.04) 100%);
+    border-left: 1px solid rgba(200,169,110,0.12);
+  }
+  .hero-content { position: relative; z-index: 2; }
+  .hero-eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block; width: 32px; height: 1px;
+    background: var(--gold);
+  }
+  h1 {
+    font-family: var(--ff-display);
+    font-size: clamp(2.8rem, 5vw, 4.4rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 1.75rem;
+    letter-spacing: -0.01em;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 300;
+  }
+  .hero-sub {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.62);
+    line-height: 1.75;
+    max-width: 520px;
+    margin-bottom: 2.75rem;
+    font-weight: 300;
+  }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--ink);
+    padding: 0.875rem 2rem;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .btn-ghost {
+    border: 1px solid rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.8);
+    padding: 0.875rem 2rem;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s;
+    display: inline-block;
+  }
+  .btn-ghost:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .hero-credentials {
+    position: relative; z-index: 2;
+    display: flex; flex-direction: column; align-items: flex-end;
+    gap: 1.5rem;
+    padding-left: 3rem;
+  }
+  .credential-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(200,169,110,0.2);
+    border-radius: 4px;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    max-width: 360px;
+    transition: border-color 0.3s;
+  }
+  .credential-card:hover { border-color: rgba(200,169,110,0.5); }
+  .credential-card h3 {
+    font-family: var(--ff-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 0.25rem;
+  }
+  .credential-card p {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.05em;
+  }
+  .hero-scroll {
+    position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    color: rgba(255,255,255,0.3);
+    font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase;
+  }
+  .scroll-line {
+    width: 1px; height: 40px;
+    background: linear-gradient(to bottom, rgba(200,169,110,0.6), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+  @keyframes scrollPulse { 0%,100%{opacity:0.4;} 50%{opacity:1;} }
+
+  /* ─── TRUST BAR ───────────────────────────────────── */
+  #trust {
+    background: var(--bone);
+    border-bottom: 1px solid var(--mist);
+    padding: 2rem 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .trust-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+  .trust-divider { width: 1px; height: 16px; background: var(--mist); }
+  .trust-item {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-body);
+    padding: 0 1rem;
+  }
+
+  /* ─── SHARED SECTION STYLES ──────────────────────── */
+  section { padding: 100px 5vw; }
+  .section-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .section-eyebrow::before {
+    content: '';
+    display: block; width: 24px; height: 1px;
+    background: var(--gold);
+  }
+  h2 {
+    font-family: var(--ff-display);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.01em;
+  }
+  h2 em { font-style: italic; color: var(--accent-teal); }
+  .lead {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    max-width: 640px;
+    font-weight: 300;
+  }
+
+  /* ─── ABOUT / POSITIONING ─────────────────────────── */
+  #about {
+    background: var(--chalk);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+  .about-visual {
+    position: relative;
+  }
+  .about-photo-frame {
+    background: var(--slate);
+    border-radius: 4px;
+    aspect-ratio: 4/5;
+    max-width: 420px;
+    position: relative;
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .about-photo-frame::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(200,169,110,0.15) 0%, rgba(30,107,107,0.1) 100%);
+  }
+  .photo-initials {
+    font-family: var(--ff-display);
+    font-size: 5rem;
+    font-weight: 300;
+    color: rgba(200,169,110,0.5);
+    position: relative; z-index: 1;
+  }
+  .about-accent-card {
+    position: absolute;
+    bottom: -2rem; right: -2rem;
+    background: var(--gold);
+    padding: 1.5rem 2rem;
+    border-radius: 4px;
+    max-width: 200px;
+  }
+  .about-accent-card strong {
+    display: block;
+    font-family: var(--ff-display);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .about-accent-card span {
+    font-size: 0.78rem;
+    color: rgba(13,13,13,0.65);
+    font-weight: 500;
+  }
+  .about-content .section-eyebrow { margin-top: 0; }
+  .about-bio {
+    font-size: 1rem;
+    color: var(--text-body);
+    line-height: 1.8;
+    margin: 1.5rem 0 2rem;
+  }
+  .about-bio strong { color: var(--ink); font-weight: 500; }
+  .companies-row {
+    display: flex; gap: 1rem; flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  .company-badge {
+    border: 1px solid var(--mist);
+    border-radius: 3px;
+    padding: 0.6rem 1.1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    transition: all 0.2s;
+  }
+  .company-badge:hover {
+    border-color: var(--gold);
+    color: var(--ink);
+  }
+
+  /* ─── SERVICES ─────────────────────────────────────── */
+  #services {
+    background: var(--slate);
+    color: #fff;
+  }
+  #services h2 { color: #fff; }
+  #services h2 em { color: var(--gold); }
+  #services .lead { color: rgba(255,255,255,0.55); }
+  .services-header { margin-bottom: 4rem; }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5px;
+    background: rgba(200,169,110,0.15);
+    border: 1.5px solid rgba(200,169,110,0.15);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .service-card {
+    background: var(--steel);
+    padding: 2.5rem;
+    transition: background 0.3s;
+    position: relative;
+  }
+  .service-card:hover { background: #323a54; }
+  .service-number {
+    font-family: var(--ff-display);
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: rgba(200,169,110,0.2);
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  .service-card h3 {
+    font-family: var(--ff-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.75rem;
+  }
+  .service-card p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+  .service-deliverables {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+  .service-deliverables li {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.4);
+    padding: 0.3rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+  }
+  .service-deliverables li::before {
+    content: '→';
+    position: absolute; left: 0;
+    color: var(--gold);
+    font-size: 0.75rem;
+  }
+  .service-link {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+  .service-link:hover { opacity: 0.7; }
+  .service-featured {
+    background: linear-gradient(135deg, #2C3347 0%, #1e2539 100%) !important;
+    border: 1px solid rgba(200,169,110,0.3) !important;
+  }
+
+  /* ─── APPROACH ────────────────────────────────────── */
+  #approach {
+    background: var(--bone);
+  }
+  .approach-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+    align-items: start;
+    margin-top: 4rem;
+  }
+  .approach-sticky { position: sticky; top: 100px; }
+  .approach-steps { display: flex; flex-direction: column; gap: 0; }
+  .step {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 2rem;
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--mist);
+    align-items: start;
+  }
+  .step:last-child { border-bottom: 1px solid var(--mist); }
+  .step-num {
+    font-family: var(--ff-display);
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--gold);
+    opacity: 0.6;
+    line-height: 1;
+    padding-top: 0.25rem;
+  }
+  .step h3 {
+    font-family: var(--ff-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+  }
+  .step p {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+  }
+
+  /* ─── SHRONOS ─────────────────────────────────────── */
+  #shronos {
+    background: var(--ink);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  #shronos::before {
+    content: '';
+    position: absolute;
+    top: -50%; right: -20%;
+    width: 700px; height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(30,107,107,0.2) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .shronos-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+    position: relative; z-index: 1;
+  }
+  #shronos h2 { color: #fff; }
+  #shronos h2 em { color: var(--accent-teal); font-style: italic; }
+  #shronos .lead { color: rgba(255,255,255,0.5); }
+  .shronos-features {
+    margin: 2.5rem 0 3rem;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .shronos-feature {
+    display: flex; align-items: flex-start; gap: 1rem;
+    padding: 1.25rem;
+    background: rgba(255,255,255,0.04);
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .feature-icon {
+    width: 36px; height: 36px;
+    background: rgba(30,107,107,0.3);
+    border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .shronos-feature h4 {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0.2rem;
+  }
+  .shronos-feature p {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.6;
+  }
+  .shronos-visual {
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .platform-mockup {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .mockup-bar {
+    background: rgba(255,255,255,0.04);
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .mockup-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .mockup-bar span {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.3);
+    margin-left: 0.5rem;
+  }
+  .mockup-content { padding: 1.5rem; }
+  .mockup-score {
+    font-family: var(--ff-display);
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--accent-teal);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .mockup-label {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .mockup-bars {
+    display: flex; flex-direction: column; gap: 0.75rem;
+  }
+  .mockup-bar-item { display: flex; flex-direction: column; gap: 0.3rem; }
+  .mockup-bar-label {
+    display: flex; justify-content: space-between;
+    font-size: 0.72rem; color: rgba(255,255,255,0.4);
+  }
+  .mockup-bar-track {
+    height: 4px; background: rgba(255,255,255,0.08);
+    border-radius: 2px; overflow: hidden;
+  }
+  .mockup-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    background: linear-gradient(to right, var(--accent-teal), var(--gold));
+  }
+  .btn-teal {
+    background: var(--accent-teal);
+    color: #fff;
+    padding: 0.875rem 2rem;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s;
+    display: inline-block;
+  }
+  .btn-teal:hover { opacity: 0.85; transform: translateY(-1px); }
+
+  /* ─── BOOKS ───────────────────────────────────────── */
+  #books { background: var(--chalk); }
+  .books-header { max-width: 600px; margin-bottom: 4rem; }
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .book-card {
+    border: 1px solid var(--mist);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s;
+    background: #fff;
+  }
+  .book-card:hover {
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+    border-color: var(--gold);
+  }
+  .book-cover {
+    aspect-ratio: 3/4;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .book-cover-1 { background: linear-gradient(145deg, #1A1F2E 0%, #0D1220 100%); }
+  .book-cover-2 { background: linear-gradient(145deg, #1E3A3A 0%, #0D2020 100%); }
+  .book-cover-3 { background: linear-gradient(145deg, #2A1F0E 0%, #1A1000 100%); }
+  .book-cover-text {
+    font-family: var(--ff-display);
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 1.3;
+  }
+  .book-cover-text em {
+    display: block;
+    color: var(--gold);
+    font-style: italic;
+    font-size: 0.9em;
+    margin-bottom: 0.5rem;
+  }
+  .book-cover-badge {
+    position: absolute;
+    top: 1rem; right: 1rem;
+    background: var(--gold);
+    color: var(--ink);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.6rem;
+    border-radius: 2px;
+  }
+  .book-info {
+    padding: 1.5rem;
+  }
+  .book-info h3 {
+    font-family: var(--ff-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+  .book-info p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .book-link {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  /* ─── TESTIMONIALS ────────────────────────────────── */
+  #testimonials {
+    background: var(--bone);
+  }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+  }
+  .testimonial-card {
+    background: #fff;
+    border: 1px solid var(--mist);
+    border-radius: 4px;
+    padding: 2rem;
+    position: relative;
+  }
+  .testimonial-card::before {
+    content: '"';
+    font-family: var(--ff-display);
+    font-size: 5rem;
+    color: var(--gold);
+    opacity: 0.3;
+    position: absolute;
+    top: 0.5rem; left: 1.5rem;
+    line-height: 1;
+  }
+  .testimonial-text {
+    font-size: 0.9rem;
+    color: var(--text-body);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    font-style: italic;
+  }
+  .testimonial-author {
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .author-avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--slate);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--ff-display);
+    font-size: 1rem;
+    color: var(--gold);
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .author-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .author-title {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  /* ─── BLOG PREVIEW ────────────────────────────────── */
+  #insights { background: var(--chalk); }
+  .insights-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .articles-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .article-card {
+    border: 1px solid var(--mist);
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .article-card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+    transform: translateY(-2px);
+  }
+  .article-image {
+    aspect-ratio: 16/9;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2rem;
+    position: relative;
+  }
+  .article-image-featured { background: linear-gradient(135deg, #1A1F2E 0%, #2C3347 100%); }
+  .article-image-sm { background: linear-gradient(135deg, #1E3A3A 0%, #143030 100%); aspect-ratio: 16/8; }
+  .article-tag {
+    position: absolute; top: 1rem; left: 1rem;
+    background: rgba(200,169,110,0.9);
+    color: var(--ink);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 2px;
+  }
+  .article-body { padding: 1.5rem; }
+  .article-body h3 {
+    font-family: var(--ff-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+  .article-body h3.featured { font-size: 1.4rem; }
+  .article-body p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-bottom: 1rem;
+  }
+  .article-meta {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* ─── CTA SECTION ─────────────────────────────────── */
+  #cta {
+    background: var(--slate);
+    padding: 120px 5vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  #cta::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(200,169,110,0.1) 0%, transparent 70%);
+  }
+  .cta-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+  #cta h2 {
+    color: #fff;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    margin-bottom: 1.25rem;
+  }
+  #cta h2 em { color: var(--gold); }
+  #cta p {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.75;
+    margin-bottom: 3rem;
+    font-weight: 300;
+  }
+  .cta-actions {
+    display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+  .cta-reassurance {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.08em;
+    display: flex; align-items: center; justify-content: center; gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .cta-reassurance span {
+    display: flex; align-items: center; gap: 0.4rem;
+  }
+
+  /* ─── LEAD CAPTURE ────────────────────────────────── */
+  #lead-capture {
+    background: var(--ink);
+    padding: 80px 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  #lead-capture h2 {
+    color: #fff;
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+  #lead-capture h2 em { color: var(--gold); }
+  #lead-capture .lead { color: rgba(255,255,255,0.45); }
+  .lead-form {
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .form-field {
+    display: flex; flex-direction: column; gap: 0.4rem;
+  }
+  .form-field label {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+  }
+  .form-field input,
+  .form-field select {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 3px;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    font-family: var(--ff-body);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+  }
+  .form-field input:focus,
+  .form-field select:focus { border-color: var(--gold); }
+  .form-field input::placeholder { color: rgba(255,255,255,0.25); }
+  .form-field select option { background: var(--slate); }
+  .form-submit {
+    background: var(--gold);
+    color: var(--ink);
+    border: none;
+    padding: 0.95rem 2rem;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s;
+    width: 100%;
+    margin-top: 0.5rem;
+    font-family: var(--ff-body);
+  }
+  .form-submit:hover { background: var(--gold-light); }
+  .form-note {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.25);
+    text-align: center;
+  }
+
+  /* ─── FOOTER ──────────────────────────────────────── */
+  footer {
+    background: #080808;
+    color: rgba(255,255,255,0.4);
+    padding: 4rem 5vw 2rem;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    margin-bottom: 2rem;
+  }
+  .footer-brand {
+    font-family: var(--ff-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline {
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.35);
+    max-width: 260px;
+    margin-bottom: 1.5rem;
+  }
+  .footer-col h4 {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 1.25rem;
+  }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-col ul li a {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.35);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-col ul li a:hover { color: var(--gold); }
+  .footer-bottom {
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 0.75rem;
+    flex-wrap: wrap; gap: 1rem;
+  }
+  .footer-legal { display: flex; gap: 1.5rem; }
+  .footer-legal a {
+    color: rgba(255,255,255,0.25);
+    text-decoration: none;
+    font-size: 0.72rem;
+  }
+  .footer-legal a:hover { color: rgba(255,255,255,0.5); }
+
+  /* ─── STRATEGY SIDEBAR ────────────────────────────── */
+  .strategy-panel {
+    background: var(--bone);
+    border: 1px solid var(--mist);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 4px 4px 0;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+  }
+  .strategy-panel h4 {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+  .strategy-panel p,
+  .strategy-panel li {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+  .strategy-panel ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+  .strategy-panel ul li::before { content: '✦ '; color: var(--gold); font-size: 0.65rem; }
+
+  /* ─── ARCHITECTURE DOC ────────────────────────────── */
+  #architecture {
+    background: #fff;
+    padding: 100px 5vw;
+  }
+  .arch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .arch-card {
+    background: var(--chalk);
+    border: 1px solid var(--mist);
+    border-radius: 4px;
+    padding: 1.75rem;
+    border-top: 3px solid var(--gold);
+  }
+  .arch-card h3 {
+    font-family: var(--ff-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+  }
+  .arch-card .arch-url {
+    font-size: 0.72rem;
+    color: var(--gold);
+    font-family: monospace;
+    margin-bottom: 1rem;
+  }
+  .arch-card ul { list-style: none; }
+  .arch-card ul li {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    padding: 0.25rem 0;
+    padding-left: 1rem;
+    position: relative;
+  }
+  .arch-card ul li::before {
+    content: '·';
+    position: absolute; left: 0;
+    color: var(--gold);
+  }
+
+  /* ─── SEO SECTION ─────────────────────────────────── */
+  #seo-strategy {
+    background: var(--slate);
+    color: #fff;
+    padding: 100px 5vw;
+  }
+  #seo-strategy h2 { color: #fff; }
+  .seo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .seo-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 4px;
+    padding: 1.75rem;
+  }
+  .seo-card h3 {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .keyword-pill {
+    display: inline-block;
+    background: rgba(200,169,110,0.12);
+    border: 1px solid rgba(200,169,110,0.25);
+    color: rgba(255,255,255,0.7);
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    margin: 0.25rem 0.2rem;
+    letter-spacing: 0.03em;
+  }
+  .blog-topic {
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.55);
+    display: flex; align-items: flex-start; gap: 0.75rem;
+  }
+  .blog-topic:first-of-type { border-top: none; }
+  .topic-num {
+    color: var(--gold);
+    font-family: var(--ff-display);
+    font-size: 1.1rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  /* ─── RESPONSIVE ─────────────────────────────────── */
+  @media (max-width: 900px) {
+    #hero { grid-template-columns: 1fr; }
+    .hero-credentials { display: none; }
+    #about { grid-template-columns: 1fr; }
+    .about-visual { display: none; }
+    .services-grid { grid-template-columns: 1fr; }
+    .approach-grid { grid-template-columns: 1fr; }
+    .shronos-inner { grid-template-columns: 1fr; }
+    .books-grid { grid-template-columns: 1fr 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .articles-grid { grid-template-columns: 1fr; }
+    #lead-capture { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .arch-grid { grid-template-columns: 1fr 1fr; }
+    .seo-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+  }
+
+  /* ─── FADE IN ANIMATION ───────────────────────────── */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ NAV ════════════════════════════ -->
+<nav>
+  <a href="#hero" class="nav-brand">Srikanth <span>Merianda</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#shronos">Shronos</a></li>
+    <li><a href="#books">Books</a></li>
+    <li><a href="#insights">Insights</a></li>
+    <li><a href="#cta" class="nav-cta">Book a Call</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════ HERO ══════════════════════════ -->
+<section id="hero">
+  <div class="hero-content fade-up">
+    <div class="hero-eyebrow">AI & RPA Transformation Advisor</div>
+    <h1>
+      Turn AI <em>Ambition</em><br>
+      Into Operational<br>
+      Reality
+    </h1>
+    <p class="hero-sub">
+      I help COOs, CTOs, and transformation leaders cut through the AI hype and build practical roadmaps that deliver measurable business outcomes — without the overhead of a large consulting firm.
+    </p>
+    <div class="hero-actions">
+      <a href="#cta" class="btn-primary">Book a Strategy Call</a>
+      <a href="#services" class="btn-ghost">Explore Services</a>
+    </div>
+  </div>
+  <div class="hero-credentials">
+    <div class="credential-card">
+      <h3>15+</h3>
+      <p>Years in Enterprise Technology & AI Transformation</p>
+    </div>
+    <div class="credential-card">
+      <h3>Shiro Technologies</h3>
+      <p>AI Engineering & SaaS Development</p>
+    </div>
+    <div class="credential-card">
+      <h3>Startekk</h3>
+      <p>Technology Consulting & RPA Modernization</p>
+    </div>
+    <div class="credential-card">
+      <h3>Author</h3>
+      <p>Published Books on AI & RPA Strategy — Available on Amazon</p>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ═══════════════════ TRUST BAR ═════════════════════ -->
+<div id="trust">
+  <span class="trust-label">Independent Advisor to</span>
+  <div class="trust-divider"></div>
+  <span class="trust-item">Small & Mid-Size Businesses</span>
+  <div class="trust-divider"></div>
+  <span class="trust-item">Enterprise Transformation Teams</span>
+  <div class="trust-divider"></div>
+  <span class="trust-item">COO · CTO · VP Operations</span>
+  <div class="trust-divider"></div>
+  <span class="trust-item">Digital Transformation Leaders</span>
+  <div class="trust-divider"></div>
+  <span class="trust-item">Fractional AI Advisory</span>
+</div>
+
+<!-- ═══════════════════ ABOUT ══════════════════════════ -->
+<section id="about">
+  <div class="about-visual fade-up">
+    <div class="about-photo-frame">
+      <span class="photo-initials">SM</span>
+    </div>
+    <div class="about-accent-card">
+      <strong>SMB → Enterprise</strong>
+      <span>Clients across the full spectrum</span>
+    </div>
+  </div>
+  <div class="about-content fade-up">
+    <div class="section-eyebrow">About Srikanth</div>
+    <h2>Strategy Over Software.<br><em>Outcomes Over Outputs.</em></h2>
+    <p class="about-bio">
+      I'm an <strong>independent AI and RPA transformation advisor</strong> who has spent over a decade at the intersection of enterprise technology and business strategy. I work directly with executive leaders — not through layers of analysts — to build AI transformation roadmaps that actually get implemented.
+    </p>
+    <p class="about-bio">
+      As the founder of <strong>Shiro Technologies</strong> (AI engineering and SaaS development) and <strong>Startekk</strong> (technology consulting), I bring both the strategic perspective and the technical credibility to guide your organization from AI readiness through full-scale transformation.
+    </p>
+    <p class="about-bio">
+      I also publish books on AI and RPA strategy — distilling complex transformation concepts into frameworks executives can act on immediately.
+    </p>
+    <div class="companies-row">
+      <span class="company-badge">⬡ Shiro Technologies</span>
+      <span class="company-badge">⬡ Startekk</span>
+      <span class="company-badge">⬡ Amazon Author</span>
+      <span class="company-badge">⬡ Shronos Platform</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SERVICES ══════════════════════ -->
+<section id="services">
+  <div class="services-header fade-up">
+    <div class="section-eyebrow">Advisory Services</div>
+    <h2>Where Boards Ask <em>Strategic</em> Questions,<br>I Provide the Answers</h2>
+    <p class="lead">Four focused engagements designed for the complexity of enterprise AI transformation — each calibrated to where you are in your journey.</p>
+  </div>
+  <div class="services-grid fade-up">
+
+    <div class="service-card service-featured">
+      <div class="service-number">01</div>
+      <h3>AI Readiness Assessment</h3>
+      <p>A structured diagnostic that reveals exactly where your organization stands today — people, process, data, and technology — and what it will take to unlock AI value at scale.</p>
+      <ul class="service-deliverables">
+        <li>Executive-level readiness scorecard across 6 dimensions</li>
+        <li>Gap analysis vs. industry maturity benchmarks</li>
+        <li>Prioritized AI opportunity roadmap (90-day + 12-month)</li>
+        <li>Board-ready presentation of findings & recommendations</li>
+        <li>Powered by the Shronos assessment platform at shronos.ai</li>
+      </ul>
+      <a href="#cta" class="service-link">Inquire About This Engagement →</a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-number">02</div>
+      <h3>RPA Modernization Assessment</h3>
+      <p>Your legacy RPA portfolio is costing you more than you realize. I assess automation debt, identify high-value re-engineering opportunities, and build a modernization roadmap that prepares you for AI-native workflows.</p>
+      <ul class="service-deliverables">
+        <li>Audit of existing RPA/automation inventory</li>
+        <li>Total cost of ownership analysis</li>
+        <li>Migration path to modern AI-augmented automation</li>
+        <li>Vendor neutrality — recommendations based on fit, not affiliation</li>
+      </ul>
+      <a href="#cta" class="service-link">Inquire About This Engagement →</a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-number">03</div>
+      <h3>Fractional AI Advisor</h3>
+      <p>Ongoing strategic counsel without the commitment of a full-time hire. I serve as your organization's embedded AI strategist — attending key meetings, advising on decisions, and keeping your transformation on track month after month.</p>
+      <ul class="service-deliverables">
+        <li>Monthly strategy sessions with executive leadership</li>
+        <li>AI vendor evaluation and contract advisory</li>
+        <li>Escalation support for critical transformation decisions</li>
+        <li>Quarterly AI landscape briefings for your leadership team</li>
+      </ul>
+      <a href="#cta" class="service-link">Inquire About This Engagement →</a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-number">04</div>
+      <h3>Executive AI Strategy Workshop</h3>
+      <p>A focused, half-day or full-day working session that takes your leadership team from scattered AI opinions to a shared, actionable strategy. Designed for C-suite and VP-level audiences.</p>
+      <ul class="service-deliverables">
+        <li>Custom pre-workshop diagnostic and stakeholder interviews</li>
+        <li>Facilitated executive alignment session (on-site or virtual)</li>
+        <li>AI opportunity mapping and prioritization matrix</li>
+        <li>Post-workshop strategy brief and 30-day action plan</li>
+      </ul>
+      <a href="#cta" class="service-link">Inquire About This Workshop →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════ APPROACH ══════════════════════ -->
+<section id="approach">
+  <div class="approach-grid">
+    <div class="approach-sticky fade-up">
+      <div class="section-eyebrow">How I Work</div>
+      <h2>A Practitioner's<br>Approach to <em>AI Strategy</em></h2>
+      <p class="lead">No junior analysts. No boilerplate frameworks repackaged with your logo. Every engagement is led by me, grounded in real implementation experience.</p>
+      <br>
+      <a href="#cta" class="btn-primary">Start the Conversation</a>
+    </div>
+    <div class="approach-steps fade-up">
+      <div class="step">
+        <span class="step-num">01</span>
+        <div>
+          <h3>Discover</h3>
+          <p>We begin with a focused discovery conversation — understanding your business model, strategic priorities, current technology landscape, and the transformation pressure you're facing. No intake forms, no portals. A real conversation.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <div>
+          <h3>Diagnose</h3>
+          <p>Using structured assessments — including my Shronos platform — I evaluate your organization's AI readiness across people, process, data, infrastructure, governance, and culture. The diagnosis is honest and specific.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <div>
+          <h3>Design</h3>
+          <p>I design a transformation roadmap calibrated to your reality — not an idealized future state. Priorities are sequenced by business impact, organizational capacity, and technical feasibility.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-num">04</span>
+        <div>
+          <h3>Advise</h3>
+          <p>For ongoing engagements, I serve as a strategic partner through execution — attending steering committee meetings, advising on vendor selection, and course-correcting when the inevitable challenges arise.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SHRONOS ════════════════════════ -->
+<section id="shronos">
+  <div class="shronos-inner">
+    <div class="fade-up">
+      <div class="section-eyebrow">AI Assessment Platform</div>
+      <h2>Meet <em>Shronos</em> — The Platform Behind the Assessment</h2>
+      <p class="lead">Shronos is my proprietary AI readiness assessment platform. It transforms what used to take weeks of consulting time into a structured, data-driven diagnostic that produces actionable executive intelligence.</p>
+      <div class="shronos-features">
+        <div class="shronos-feature">
+          <div class="feature-icon">◈</div>
+          <div>
+            <h4>Multi-Dimensional Scoring</h4>
+            <p>Assess AI readiness across 6 organizational dimensions with benchmarks drawn from real transformation engagements.</p>
+          </div>
+        </div>
+        <div class="shronos-feature">
+          <div class="feature-icon">◉</div>
+          <div>
+            <h4>Executive-Ready Reporting</h4>
+            <p>Findings are formatted for board and executive presentations — not buried in consultant appendices.</p>
+          </div>
+        </div>
+        <div class="shronos-feature">
+          <div class="feature-icon">◈</div>
+          <div>
+            <h4>Roadmap Generator</h4>
+            <p>Automatically surfaces prioritized recommendations based on your specific readiness gaps and industry context.</p>
+          </div>
+        </div>
+      </div>
+      <a href="https://shronos.ai" target="_blank" class="btn-teal">Access Shronos Platform →</a>
+    </div>
+    <div class="shronos-visual fade-up">
+      <div class="platform-mockup">
+        <div class="mockup-bar">
+          <div class="mockup-dot" style="background:#ff5f57"></div>
+          <div class="mockup-dot" style="background:#ffbd2e"></div>
+          <div class="mockup-dot" style="background:#28c840"></div>
+          <span>shronos.ai — AI Readiness Dashboard</span>
+        </div>
+        <div class="mockup-content">
+          <div class="mockup-score">68</div>
+          <div class="mockup-label">Overall AI Readiness Score — Q4 Assessment</div>
+          <div class="mockup-bars">
+            <div class="mockup-bar-item">
+              <div class="mockup-bar-label"><span>Data Infrastructure</span><span>82%</span></div>
+              <div class="mockup-bar-track"><div class="mockup-bar-fill" style="width:82%"></div></div>
+            </div>
+            <div class="mockup-bar-item">
+              <div class="mockup-bar-label"><span>AI Talent & Culture</span><span>54%</span></div>
+              <div class="mockup-bar-track"><div class="mockup-bar-fill" style="width:54%"></div></div>
+            </div>
+            <div class="mockup-bar-item">
+              <div class="mockup-bar-label"><span>Process Automation Maturity</span><span>71%</span></div>
+              <div class="mockup-bar-track"><div class="mockup-bar-fill" style="width:71%"></div></div>
+            </div>
+            <div class="mockup-bar-item">
+              <div class="mockup-bar-label"><span>Governance & Risk</span><span>47%</span></div>
+              <div class="mockup-bar-track"><div class="mockup-bar-fill" style="width:47%"></div></div>
+            </div>
+            <div class="mockup-bar-item">
+              <div class="mockup-bar-label"><span>Technology Stack</span><span>76%</span></div>
+              <div class="mockup-bar-track"><div class="mockup-bar-fill" style="width:76%"></div></div>
+            </div>
+            <div class="mockup-bar-item">
+              <div class="mockup-bar-label"><span>Executive Alignment</span><span>63%</span></div>
+              <div class="mockup-bar-track"><div class="mockup-bar-fill" style="width:63%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ BOOKS ══════════════════════════ -->
+<section id="books">
+  <div class="books-header fade-up">
+    <div class="section-eyebrow">Publications</div>
+    <h2>Frameworks That Leaders<br><em>Actually Use</em></h2>
+    <p class="lead">My books translate complex AI and RPA transformation concepts into strategic frameworks that executives and operations leaders can apply immediately — no PhD required.</p>
+  </div>
+  <div class="books-grid fade-up">
+    <div class="book-card">
+      <div class="book-cover book-cover-1">
+        <div class="book-cover-text">
+          <em>A Strategic Guide to</em>
+          AI Transformation for the Modern Enterprise
+        </div>
+        <span class="book-cover-badge">Amazon</span>
+      </div>
+      <div class="book-info">
+        <h3>AI Transformation for the Modern Enterprise</h3>
+        <p>A practical playbook for executive leaders navigating the shift from AI experimentation to enterprise-wide deployment.</p>
+        <a href="https://amazon.com" target="_blank" class="book-link">View on Amazon →</a>
+      </div>
+    </div>
+    <div class="book-card">
+      <div class="book-cover book-cover-2">
+        <div class="book-cover-text">
+          <em>The Definitive Guide to</em>
+          RPA Strategy & Modernization
+        </div>
+        <span class="book-cover-badge">Amazon</span>
+      </div>
+      <div class="book-info">
+        <h3>RPA Strategy & Modernization</h3>
+        <p>From legacy automation debt to AI-native workflows — the complete framework for RPA transformation leaders.</p>
+        <a href="https://amazon.com" target="_blank" class="book-link">View on Amazon →</a>
+      </div>
+    </div>
+    <div class="book-card">
+      <div class="book-cover book-cover-3">
+        <div class="book-cover-text">
+          <em>Building the</em>
+          AI-Ready Organization
+        </div>
+        <span class="book-cover-badge">Amazon</span>
+      </div>
+      <div class="book-info">
+        <h3>Building the AI-Ready Organization</h3>
+        <p>The structural and cultural blueprint for organizations that want to compete — and lead — in the age of artificial intelligence.</p>
+        <a href="https://amazon.com" target="_blank" class="book-link">View on Amazon →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TESTIMONIALS ══════════════════ -->
+<section id="testimonials">
+  <div class="fade-up" style="margin-bottom:0;">
+    <div class="section-eyebrow">Client Perspective</div>
+    <h2>What Leaders Say After<br><em>Working Together</em></h2>
+  </div>
+  <div class="testimonials-grid fade-up">
+    <div class="testimonial-card">
+      <p class="testimonial-text">Srikanth didn't just hand us a report — he walked us through every finding and helped us build a consensus around priorities that we'd been debating internally for two years. The AI Readiness Assessment was the catalyst we needed.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">JM</div>
+        <div>
+          <div class="author-name">COO, Mid-Market Manufacturing</div>
+          <div class="author-title">500–2,000 employees</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">Our RPA portfolio was a mess — overlapping tools, fragile bots, mounting technical debt. In 6 weeks, Srikanth gave us a clear picture of what to keep, what to rebuild, and what to retire. We've since reduced automation maintenance cost by 40%.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">TR</div>
+        <div>
+          <div class="author-name">VP Operations, Regional Financial Services</div>
+          <div class="author-title">Digital Transformation Lead</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">Having Srikanth as a fractional advisor has been like having a senior partner on call without the Big 4 price tag. He's given our CTO and board the confidence to move faster on AI initiatives we were hesitant to pursue.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">AL</div>
+        <div>
+          <div class="author-name">CEO, Growth-Stage Technology Company</div>
+          <div class="author-title">Series B, ~$40M ARR</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ INSIGHTS ══════════════════════ -->
+<section id="insights">
+  <div class="insights-header fade-up">
+    <div>
+      <div class="section-eyebrow">Insights</div>
+      <h2>Perspectives on AI <em>Transformation</em></h2>
+    </div>
+    <a href="#" class="btn-ghost" style="border-color:var(--mist);color:var(--text-muted);white-space:nowrap;">View All Articles →</a>
+  </div>
+  <div class="articles-grid fade-up">
+    <div class="article-card">
+      <div class="article-image article-image-featured">
+        <span>🤖</span>
+        <span class="article-tag">AI Strategy</span>
+      </div>
+      <div class="article-body">
+        <h3 class="featured">Why Your AI Pilot Succeeded and Your Rollout Failed: The Readiness Gap No One Talks About</h3>
+        <p>Most organizations can run a successful AI pilot. Far fewer can scale it. Here's the organizational gap that derails transformation — and how to close it before you invest further.</p>
+        <div class="article-meta">Srikanth Merianda · 8 min read</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1.5rem;">
+      <div class="article-card">
+        <div class="article-image article-image-sm">
+          <span>⚙️</span>
+          <span class="article-tag">RPA</span>
+        </div>
+        <div class="article-body">
+          <h3>The Hidden Cost of Legacy RPA: What Your Maintenance Budget Is Really Telling You</h3>
+          <div class="article-meta">Srikanth Merianda · 6 min read</div>
+        </div>
+      </div>
+      <div class="article-card">
+        <div class="article-image article-image-sm" style="background:linear-gradient(135deg,#2a1f0e,#1a1000)">
+          <span>📋</span>
+          <span class="article-tag">Executive Guide</span>
+        </div>
+        <div class="article-body">
+          <h3>5 Questions Every COO Should Be Able to Answer About Their AI Strategy</h3>
+          <div class="article-meta">Srikanth Merianda · 5 min read</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CTA ════════════════════════════ -->
+<section id="cta">
+  <div class="cta-inner fade-up">
+    <div class="section-eyebrow" style="justify-content:center;color:var(--gold);">Let's Talk Strategy</div>
+    <h2>Is Your Organization <em>Ready</em><br>for What AI Demands?</h2>
+    <p>Most leaders feel behind on AI. The ones who close the gap don't wait for the perfect plan — they start with an honest assessment. Let's spend 30 minutes determining exactly where you stand and what your next move should be.</p>
+    <div class="cta-actions">
+      <a href="https://calendly.com" target="_blank" class="btn-primary">Book a 30-Minute Strategy Call</a>
+      <a href="#lead-capture" class="btn-ghost">Download the AI Readiness Guide</a>
+    </div>
+    <div class="cta-reassurance">
+      <span>✓ No sales pitch</span>
+      <span>✓ Specific to your business</span>
+      <span>✓ No obligation</span>
+      <span>✓ Senior-level conversation</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ LEAD CAPTURE ═══════════════════ -->
+<section id="lead-capture">
+  <div class="fade-up">
+    <div class="section-eyebrow" style="color:var(--gold);">Free Resource</div>
+    <h2>The <em>AI Readiness</em><br>Executive Briefing</h2>
+    <p class="lead">A concise, no-fluff guide to assessing your organization's AI readiness across the 6 dimensions that determine transformation success. Used by COOs and CTOs across industries.</p>
+    <br>
+    <div class="strategy-panel">
+      <h4>What's Inside</h4>
+      <ul>
+        <li>The 6-dimension AI readiness framework</li>
+        <li>Industry maturity benchmarks</li>
+        <li>The 10 questions to ask your leadership team</li>
+        <li>Common readiness traps and how to avoid them</li>
+        <li>A 90-day starter roadmap template</li>
+      </ul>
+    </div>
+  </div>
+  <div class="lead-form fade-up">
+    <div class="form-row">
+      <div class="form-field">
+        <label>First Name</label>
+        <input type="text" placeholder="First name">
+      </div>
+      <div class="form-field">
+        <label>Last Name</label>
+        <input type="text" placeholder="Last name">
+      </div>
+    </div>
+    <div class="form-field">
+      <label>Business Email</label>
+      <input type="email" placeholder="you@company.com">
+    </div>
+    <div class="form-field">
+      <label>Title / Role</label>
+      <input type="text" placeholder="COO, VP Operations, CTO...">
+    </div>
+    <div class="form-field">
+      <label>Company Size</label>
+      <select>
+        <option value="">Select company size</option>
+        <option>1–50 employees</option>
+        <option>51–250 employees</option>
+        <option>251–1,000 employees</option>
+        <option>1,000–5,000 employees</option>
+        <option>5,000+ employees</option>
+      </select>
+    </div>
+    <div class="form-field">
+      <label>Primary AI Challenge</label>
+      <select>
+        <option value="">What's your biggest challenge?</option>
+        <option>AI strategy & roadmap</option>
+        <option>RPA modernization</option>
+        <option>Executive alignment</option>
+        <option>Vendor selection</option>
+        <option>Implementation & scaling</option>
+        <option>Data readiness</option>
+      </select>
+    </div>
+    <button class="form-submit">Send Me the Briefing →</button>
+    <p class="form-note">No spam. One email, one resource. Unsubscribe any time.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════ SITE ARCHITECTURE ══════════════ -->
+<section id="architecture" style="padding:80px 5vw;">
+  <div class="fade-up">
+    <div class="section-eyebrow">Site Blueprint</div>
+    <h2>Recommended <em>Site Architecture</em></h2>
+    <p class="lead">Complete page structure for srikanthmerianda.com with SEO-optimized URL slugs and purpose-driven page strategy.</p>
+  </div>
+  <div class="arch-grid fade-up">
+    <div class="arch-card">
+      <h3>Homepage</h3>
+      <div class="arch-url">/</div>
+      <ul>
+        <li>Hero with primary CTA</li>
+        <li>Social proof trust bar</li>
+        <li>About / Positioning section</li>
+        <li>Services overview (4 cards)</li>
+        <li>Shronos platform callout</li>
+        <li>Books preview (3 books)</li>
+        <li>Testimonials (3)</li>
+        <li>Insights teaser</li>
+        <li>CTA + Lead capture form</li>
+      </ul>
+    </div>
+    <div class="arch-card">
+      <h3>About</h3>
+      <div class="arch-url">/about</div>
+      <ul>
+        <li>Full biography</li>
+        <li>Philosophy & approach</li>
+        <li>Companies: Shiro + Startekk</li>
+        <li>Speaking & media</li>
+        <li>LinkedIn / contact links</li>
+      </ul>
+    </div>
+    <div class="arch-card">
+      <h3>Services</h3>
+      <div class="arch-url">/services</div>
+      <ul>
+        <li>Services overview page</li>
+        <li>/services/ai-readiness-assessment</li>
+        <li>/services/rpa-modernization</li>
+        <li>/services/fractional-ai-advisor</li>
+        <li>/services/executive-workshops</li>
+      </ul>
+    </div>
+    <div class="arch-card">
+      <h3>Shronos</h3>
+      <div class="arch-url">/shronos</div>
+      <ul>
+        <li>Platform overview & demo</li>
+        <li>Assessment methodology</li>
+        <li>Sample report preview</li>
+        <li>Link to shronos.ai</li>
+        <li>Book assessment CTA</li>
+      </ul>
+    </div>
+    <div class="arch-card">
+      <h3>Books</h3>
+      <div class="arch-url">/books</div>
+      <ul>
+        <li>Full book listings</li>
+        <li>Summaries & key frameworks</li>
+        <li>Amazon purchase links</li>
+        <li>Bulk / speaking inquiries</li>
+        <li>Reader resources downloads</li>
+      </ul>
+    </div>
+    <div class="arch-card">
+      <h3>Insights / Blog</h3>
+      <div class="arch-url">/insights</div>
+      <ul>
+        <li>SEO-targeted articles</li>
+        <li>Categorized: AI, RPA, Strategy</li>
+        <li>Email capture in sidebar</li>
+        <li>Related services CTAs</li>
+        <li>Guest feature / PR links</li>
+      </ul>
+    </div>
+    <div class="arch-card">
+      <h3>Contact / Book a Call</h3>
+      <div class="arch-url">/contact</div>
+      <ul>
+        <li>Calendly or scheduling embed</li>
+        <li>Engagement inquiry form</li>
+        <li>Response time expectation</li>
+        <li>Speaking / media inquiries</li>
+      </ul>
+    </div>
+    <div class="arch-card">
+      <h3>Case Studies</h3>
+      <div class="arch-url">/results</div>
+      <ul>
+        <li>Anonymized client results</li>
+        <li>Before / after metrics</li>
+        <li>Industry case study filters</li>
+        <li>Supporting testimonials</li>
+      </ul>
+    </div>
+    <div class="arch-card">
+      <h3>Resources</h3>
+      <div class="arch-url">/resources</div>
+      <ul>
+        <li>AI Readiness Guide (lead magnet)</li>
+        <li>Downloadable frameworks</li>
+        <li>RPA audit checklist</li>
+        <li>AI vendor comparison guide</li>
+        <li>Email-gated downloads</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SEO STRATEGY ══════════════════ -->
+<section id="seo-strategy">
+  <div class="fade-up">
+    <div class="section-eyebrow" style="color:var(--gold);">SEO & Content Strategy</div>
+    <h2 style="color:#fff;">Keywords, Content, <em style="color:var(--gold);">and Growth</em></h2>
+    <p class="lead" style="color:rgba(255,255,255,0.45);">A targeted SEO and content strategy built around the search intent of COOs, CTOs, and transformation leaders evaluating AI advisory services.</p>
+  </div>
+  <div class="seo-grid fade-up">
+    <div class="seo-card">
+      <h3>Primary Target Keywords</h3>
+      <span class="keyword-pill">AI transformation consultant</span>
+      <span class="keyword-pill">AI readiness assessment</span>
+      <span class="keyword-pill">fractional AI advisor</span>
+      <span class="keyword-pill">RPA modernization consultant</span>
+      <span class="keyword-pill">enterprise AI strategy</span>
+      <span class="keyword-pill">AI consulting for SMB</span>
+      <span class="keyword-pill">RPA assessment services</span>
+      <span class="keyword-pill">AI strategy workshop</span>
+      <span class="keyword-pill">digital transformation advisor</span>
+      <span class="keyword-pill">AI readiness scorecard</span>
+      <span class="keyword-pill">independent AI consultant</span>
+      <span class="keyword-pill">executive AI advisory</span>
+    </div>
+    <div class="seo-card">
+      <h3>Long-Tail & Intent Keywords</h3>
+      <span class="keyword-pill">how to assess AI readiness enterprise</span>
+      <span class="keyword-pill">RPA modernization roadmap</span>
+      <span class="keyword-pill">AI strategy for operations leaders</span>
+      <span class="keyword-pill">how to hire fractional AI advisor</span>
+      <span class="keyword-pill">AI transformation for mid-market</span>
+      <span class="keyword-pill">COO guide to AI implementation</span>
+      <span class="keyword-pill">RPA vs AI automation strategy</span>
+      <span class="keyword-pill">AI readiness framework 2025</span>
+      <span class="keyword-pill">best AI consultants for SMB</span>
+    </div>
+    <div class="seo-card">
+      <h3>Recommended Blog Topics</h3>
+      <div class="blog-topic"><span class="topic-num">1</span><span>The 6 Dimensions of AI Readiness: A Framework for Operations Leaders</span></div>
+      <div class="blog-topic"><span class="topic-num">2</span><span>RPA vs. AI Automation: What the Distinction Actually Means for Your Budget</span></div>
+      <div class="blog-topic"><span class="topic-num">3</span><span>How to Build an AI Business Case That Survives Board Scrutiny</span></div>
+      <div class="blog-topic"><span class="topic-num">4</span><span>The Fractional AI Advisor Model: Who It's For and When It Makes Sense</span></div>
+      <div class="blog-topic"><span class="topic-num">5</span><span>5 Signs Your RPA Program Needs a Modernization Assessment — Not Another Bot</span></div>
+      <div class="blog-topic"><span class="topic-num">6</span><span>Why Most AI Strategies Fail in Year Two (And How to Avoid It)</span></div>
+      <div class="blog-topic"><span class="topic-num">7</span><span>AI Readiness Benchmarks by Industry: Where Does Your Organization Stand?</span></div>
+      <div class="blog-topic"><span class="topic-num">8</span><span>The Executive's Cheat Sheet for AI Vendor Evaluation</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═════════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">Srikanth <span>Merianda</span></div>
+      <p class="footer-tagline">Independent AI & RPA Transformation Advisor. Helping executive leaders turn AI ambition into operational reality.</p>
+      <div style="font-size:0.78rem;color:rgba(255,255,255,0.3);">
+        <div style="margin-bottom:0.3rem;">⬡ Shiro Technologies</div>
+        <div>⬡ Startekk</div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">AI Readiness Assessment</a></li>
+        <li><a href="#">RPA Modernization</a></li>
+        <li><a href="#">Fractional AI Advisor</a></li>
+        <li><a href="#">Executive Workshops</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">AI Readiness Guide</a></li>
+        <li><a href="#">Books on Amazon</a></li>
+        <li><a href="#">Shronos Platform</a></li>
+        <li><a href="#">Insights / Blog</a></li>
+        <li><a href="#">Case Studies</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Book a Call</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Shiro Technologies</a></li>
+        <li><a href="#">Startekk</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Srikanth Merianda. All rights reserved.</span>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Intersection Observer for fade-up animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, 100);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Nav scroll effect
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.style.boxShadow = '0 4px 30px rgba(0,0,0,0.4)';
+    } else {
+      nav.style.boxShadow = 'none';
+    }
+  });
+
+  // Form submission (demo)
+  document.querySelector('.form-submit').addEventListener('click', function() {
+    this.textContent = '✓ Briefing on Its Way!';
+    this.style.background = '#1E6B6B';
+    this.style.color = '#fff';
+  });
+</script>
+</body>
+</html>
