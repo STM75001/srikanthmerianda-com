@@ -1,155 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage — Highest Priority -->
+  <!-- LIVE PAGES ONLY — add new entries here as pages go live -->
+
   <url>
     <loc>https://srikanthmerianda.com/</loc>
-    <lastmod>2025-03-01</lastmod>
+    <lastmod>2026-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Contact / Book a Call — High Priority (conversion page) -->
   <url>
     <loc>https://srikanthmerianda.com/contact</loc>
-    <lastmod>2025-03-01</lastmod>
+    <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-
-  <!-- Services Overview -->
-  <url>
-    <loc>https://srikanthmerianda.com/services</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- AI Readiness Assessment — Top SEO page -->
-  <url>
-    <loc>https://srikanthmerianda.com/services/ai-readiness-assessment</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- RPA Modernization Assessment -->
-  <url>
-    <loc>https://srikanthmerianda.com/services/rpa-modernization</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- Fractional AI Advisor -->
-  <url>
-    <loc>https://srikanthmerianda.com/services/fractional-ai-advisor</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- Executive AI Strategy Workshops -->
-  <url>
-    <loc>https://srikanthmerianda.com/services/executive-workshops</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- About -->
-  <url>
-    <loc>https://srikanthmerianda.com/about</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Shronos Platform -->
-  <url>
-    <loc>https://srikanthmerianda.com/shronos</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Books -->
-  <url>
-    <loc>https://srikanthmerianda.com/books</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <!-- Insights / Blog Index -->
-  <url>
-    <loc>https://srikanthmerianda.com/insights</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <!-- Blog Posts — Add entries as articles are published -->
-  <url>
-    <loc>https://srikanthmerianda.com/insights/why-ai-pilot-succeeded-rollout-failed</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://srikanthmerianda.com/insights/6-dimensions-ai-readiness-framework</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://srikanthmerianda.com/insights/rpa-vs-hyperautomation-coo-question</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://srikanthmerianda.com/insights/fractional-ai-advisor-model</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://srikanthmerianda.com/insights/agentic-ai-for-smbs</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Case Studies / Results -->
-  <url>
-    <loc>https://srikanthmerianda.com/results</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Resources / Downloads -->
-  <url>
-    <loc>https://srikanthmerianda.com/resources</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-
-  <!-- Privacy Policy -->
-  <url>
-    <loc>https://srikanthmerianda.com/privacy</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
 
 </urlset>

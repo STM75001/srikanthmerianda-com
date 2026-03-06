@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9DPCMN8SDB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9DPCMN8SDB');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Book a Strategy Call | Srikanth Merianda — AI & RPA Transformation Advisor</title>
@@ -396,7 +404,7 @@
               </select>
             </div>
           </div>
-          <button type="submit" class="submit-btn">
+          <button type="submit" class="submit-btn" onclick="gtag('event','form_submit',{'event_category':'lead','event_label':'contact_form'})">
             <span>Request My Strategy Call</span>
             <span>→</span>
           </button>
